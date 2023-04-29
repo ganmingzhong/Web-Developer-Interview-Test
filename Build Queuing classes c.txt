@@ -1,0 +1,2 @@
+To improve the queue or stack, we can implement template in C++. Template allow the class to access diferent data type without build another new classes. 
+Therefore, we only need to build one stack class but able to create stack object in different data type. 

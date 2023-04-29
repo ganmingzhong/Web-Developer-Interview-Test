@@ -4,13 +4,8 @@ using namespace std;
 
 class IQueuable{
 protected:
-  // 
   int AllocateSize;
   string * array ;
-  /*void setSize(int i)
-  {
-    AllocateSize=i;
-  }*/
 
 public:
   virtual string* enqueue(string item) =0;
@@ -20,9 +15,6 @@ public:
   {
     return array;
   }
-  
-  //virtual int size() =0;
-  
 };
 
 class LIFOQUEUE :public IQueuable
@@ -42,17 +34,10 @@ class LIFOQUEUE :public IQueuable
 
     int getSize();
    
-    void Print()
-    {
-      cout<<array[0]<<"\n";
-      cout<<array[1]<<"\n";
-      cout<<array[2]<<"\n";
-    }
 
     virtual ~LIFOQUEUE() {
         delete[] array;
     }
-
 };
 
 class FIFOQUEUE :public IQueuable
@@ -71,13 +56,6 @@ class FIFOQUEUE :public IQueuable
     string dequeue();
 
     int getSize();
-   
-    void Print()
-    {
-      cout<<array[0]<<"\n";
-      cout<<array[1]<<"\n";
-      cout<<array[2]<<"\n";
-    }
 
     virtual ~FIFOQUEUE() {
         delete[] array;
@@ -176,6 +154,7 @@ int FIFOQUEUE:: getSize()
 
 int main() {
 	// Create a LIFO object
+  cout<<"\nLIFO\n";
   LIFOQUEUE LIFO(3);
   // enqueue 
   string * arrayLIFO=LIFO.enqueue("cow");
@@ -184,19 +163,20 @@ int main() {
 
   //dequeue
   string itemL = LIFO.dequeue();
-
+  
   //getSize
   int sizeLIFO=LIFO.getSize();
 
   //getQueue
   string * queueL=LIFO.getQueue();
-  cout<<"\nLIFO\n";
+  
   for(int i=0;i<sizeLIFO;i++)
   {
     cout<<queueL[i]<<'\n';
   }
 
   // Create a FIFO object
+  cout<<"\nFIFO\n";
   FIFOQUEUE FIFO(3);
   // enqueue 
   string * arrayFIFO=FIFO.enqueue("cow");
@@ -211,7 +191,7 @@ int main() {
 
   //getQueue
   string * queueF=FIFO.getQueue();
-  cout<<"\nFIFO\n";
+  
   for(int i=0;i<sizeFIFO;i++)
   {
     cout<<queueF[i]<<'\n';

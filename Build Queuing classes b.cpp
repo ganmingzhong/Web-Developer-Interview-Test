@@ -19,8 +19,6 @@ public:
 
 class LIFOQUEUE :public IQueuable
 {
-  private:
-    int front=0,end=0;
   public:
     LIFOQUEUE(int size)
     {
@@ -35,8 +33,6 @@ class LIFOQUEUE :public IQueuable
 
 class FIFOQUEUE :public IQueuable
 {
-  private:
-    int front=0,end=0;
   public:
     FIFOQUEUE(int size)
     {

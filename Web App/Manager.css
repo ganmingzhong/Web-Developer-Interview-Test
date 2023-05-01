@@ -1,0 +1,40 @@
+
+  
+  p{
+    font-size: large;
+    font-weight: bold;
+  }
+  
+  .CounterCus{
+    background-color:wheat;
+    margin-top:20px;
+    display:inline-block;
+    flex-direction: column;
+    padding-top: 10px;
+    width:250px;
+    height:300px;
+    margin:10px;
+    align-items: center;
+    border-radius: 15px;
+  }
+  
+  
+  
+  .CounterCtn{
+    background-color:#d2b48c;
+    text-align: center;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    min-width: 100vw;
+  }
+  
+  
+
+button{
+    margin-top:10px;
+    width:150px;
+    padding:100px;
+  }

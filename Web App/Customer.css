@@ -1,0 +1,56 @@
+.ServingCtn{
+    background-color:wheat;
+    margin-top:50px;
+    display:block;
+    justify-content: center;
+    align-items: center;
+    width:50% ;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 15px;
+  }
+  
+  p{
+    color:black;
+    font-size: large;
+    font-weight: bold;
+  }
+  
+  .CounterCus{
+
+    background-color:wheat;
+    margin-top:10px;
+    display:flex;
+    flex-direction: column;
+    padding-top: 10px;
+    width:200px;
+    height:200px;
+    margin:10px;
+    border-radius: 15px;
+  }
+  
+  .bi-circle-fill{
+    display: flex;
+    justify-content: flex-end;
+    font-size:20px;
+    color:black;
+    margin:15px;
+  }
+  
+  .CounterCtn{
+    display:flex;
+    flex-direction: row;
+    margin-top: 20px;
+  }
+  
+  .containerCus{
+    background-color:#d2b48c;
+    min-height: 100vh;
+    min-width:100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  
+  }
